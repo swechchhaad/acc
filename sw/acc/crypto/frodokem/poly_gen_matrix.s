@@ -53,9 +53,7 @@ poly_gen_matrix_init:
  *
  * Squeeze one row of A (n entries of 16 bits, 2n bytes) from the SHAKE-128
  * operation set up by `poly_gen_matrix_init`. Every 32-byte squeeze holds
- * 16 consecutive entries A[i][16t .. 16t+15], one per 16-bit lane. No
- * rejection or reduction is needed: q is a power of two and the reduction
- * mod q is deferred to packing.
+ * 16 consecutive entries A[i][16t .. 16t+15], one per 16-bit lane.
  *
  * On return, x11 has been advanced by one row (2n bytes).
  *
