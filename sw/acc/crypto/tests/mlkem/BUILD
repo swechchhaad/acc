@@ -14,9 +14,9 @@ load("//rules:acc.bzl", "acc_autogen_sim_test", "acc_binary", "acc_consttime_tes
 package(default_visibility = ["//visibility:public"])
 
 MODE_FOR_PARAMS = {
-    "kaiburr8": 24,
-    "kaiburr6": 18,
-    "kaiburr4": 7,
+    "kaiburr6144": 24,
+    "kaiburr4608": 18,
+    "kaiburr1792": 7,
 }
 
 # the simulator is deterministic, so re-running the same seed is byte and cycle-identical

@@ -9,7 +9,7 @@
 /* SPDX-License-Identifier: Apache-2.0 */
 
 /*
- * self-contained roundtrip test for kaiburr8 (k=24, uncompressed ciphertext).
+ * self-contained roundtrip test for kaiburr6144 (k=24, uncompressed ciphertext).
  *
  * runs keypair -> encaps -> decaps in a single elf and checks that the shared
  * secret produced by encapsulation matches the one recovered by decapsulation.

@@ -4,9 +4,9 @@ from kyber_py.ml_kem.ml_kem import ML_KEM
 
 KAIBURR_PARAMS = {
     # eta_1/eta_2 are unused
-    "kaiburr8": {"k": 24, "eta_1": 2, "eta_2": 2, "du": 12, "dv": 12},
-    "kaiburr6": {"k": 18, "eta_1": 2, "eta_2": 2, "du": 12, "dv": 12},
-    "kaiburr4": {"k": 7, "eta_1": 2, "eta_2": 2, "du": 12, "dv": 12},
+    "kaiburr6144": {"k": 24, "eta_1": 2, "eta_2": 2, "du": 12, "dv": 12},
+    "kaiburr4608": {"k": 18, "eta_1": 2, "eta_2": 2, "du": 12, "dv": 12},
+    "kaiburr1792": {"k": 7, "eta_1": 2, "eta_2": 2, "du": 12, "dv": 12},
 }
 
 

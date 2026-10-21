@@ -87,7 +87,7 @@
  */
 .globl indcpa_dec
 indcpa_dec:
-  /* stack layout (K=24, kaiburr8)
+  /* stack layout (K=24, kaiburr6144)
    *   STACK_DEC_B + K*512    : poly v
    *   STACK_DEC_B + (K+1)*512: secret key polyvec
    * working region size = (2K+1)*512 = 25088 bytes. */
@@ -197,7 +197,7 @@ crypto_kem_dec:
   #define STACK_KEM_DEC_CT_ADDR  -20
   #define STACK_KEM_DEC_PK_ADDR  -24
   #define STACK_KEM_DEC_CMP_ADDR -32
-  /* K=24 (kaiburr8) stack offsets */
+  /* K=24 (kaiburr6144) stack offsets */
   #define STACK_KEM_DEC_KR     -128
   #define STACK_KEM_DEC_BUF    -192
   #define STACK_KEM_DEC_CMP    -9792
@@ -331,7 +331,7 @@ kyber_ciphertext_sizes:
 .word 0  /* K=4 (ML-KEM-1024) unused */
 .word 0  /* K=5 unused */
 .word 0  /* K=6 unused */
-.word 3072  /* K=7 (kaiburr4) */
+.word 3072  /* K=7 (kaiburr1792) */
 .word 0  /* K=8 unused */
 .word 0  /* K=9 unused */
 .word 0  /* K=10 unused */
@@ -342,10 +342,10 @@ kyber_ciphertext_sizes:
 .word 0  /* K=15 unused */
 .word 0  /* K=16 unused */
 .word 0  /* K=17 unused */
-.word 7296  /* K=18 (kaiburr6) */
+.word 7296  /* K=18 (kaiburr4608) */
 .word 0  /* K=19 unused */
 .word 0  /* K=20 unused */
 .word 0  /* K=21 unused */
 .word 0  /* K=22 unused */
 .word 0  /* K=23 unused */
-.word 9600 /* K = 24 (kaiburr8) */
+.word 9600 /* K = 24 (kaiburr6144) */
